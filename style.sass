@@ -1,7 +1,56 @@
-#app
-  font-family: Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
+$darkGreen: #1e3932
+$green: #008248
+$paleGreen: #d4e9e2
+.navbar
+  display: flex
+  justify-content: space-between
+  &__logo
+    height: 3rem
+.banner
+  background-color: $darkGreen
+  color: white
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  &__button
+    border: 1px solid #fff
+    background-color: $darkGreen
+    color: #fff
+    border-radius: 25px
+    height: fit-content
+    padding: 0.5rem 1rem
+.hero
+  background-color: #d4e9e2
+  // background-image: url('https://www.starbucks.com/weblx/images/rewards/hero/hero-mobile_2021.jpg')
+  // background-repeat: no-repeat
+  // background-size: cover
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
   text-align: center
-  color: #2c3e50
-  margin-top: 2px
+  
+  > *
+    width: 100%
+    margin-left: 20%
+    margin-right: 20%
+
+  &__title
+    text-transform: uppercase
+
+  &__button
+    border: 1px solid #fff
+    background-color: $green
+    color: #fff
+    border-radius: 25px
+    height: fit-content
+    padding: 0.5rem 1rem
+
+.link
+  text-decoration: underline
+  cursor: pointer
+  &:hover
+    text-decoration: none
+
+

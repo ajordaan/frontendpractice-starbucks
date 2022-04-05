@@ -5,20 +5,32 @@ $superPaleGreen: #f1f8f6
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap')
 
+// *,
+// *::before,
+// *::after
+//   box-sizing: border-box
+
 body 
   font-family: 'Open Sans', sans-serif
+  margin: 0
 
 .navbar
   display: flex
   justify-content: space-between
+  align-items: center
+  padding: 1rem
   &__logo
     height: 3rem
 .banner
   background-color: $darkGreen
+  position: sticky
+  top: 0
+  z-index: 999
   color: white
   display: flex
   justify-content: space-between
   align-items: center
+  padding: 0 1rem
 
   &__button
     border: 1px solid #fff
@@ -46,23 +58,42 @@ body
   &__title
     text-transform: uppercase
     font-weight: 600
+    margin-bottom: 0
+
+  &__subtitle
+    font-size: 0.9rem
+    padding-bottom: 2rem
 
   &__button
     border: 1px solid #fff
     background-color: $green
     color: #fff
     border-radius: 25px
+    font-size: 1rem
     height: fit-content
+    width: fit-content
     padding: 0.5rem 1rem
 
+  &__image
+    position: relative
+    width: 80%
+    margin: 0
+    right: -10%
 .link
   text-decoration: underline
   cursor: pointer
+  padding-top: 1rem
+  &--green
+    color: $green
   &:hover
     text-decoration: none
 
 .getting-started
   text-align: center
+  padding: 2rem 0.5rem
+  &__title
+    font-weight: 600
+    font-size: 1.5rem
 
 .getting-started-steps
   &__step
@@ -73,6 +104,11 @@ body
       padding-right: 1rem 
   &__step-content
     text-align: left
+    > h5
+      font-size: 1rem
+      font-weight: 600
+    > p
+      font-size: 0.9rem
 
 .rewards-tabs
   background-color: $superPaleGreen
@@ -105,6 +141,7 @@ body
       font-weight: 600
       margin-bottom: 0
 .extras
+  padding: 3rem 1rem
   &__header
     text-align: center
   &__header-title
@@ -123,4 +160,10 @@ body
       padding-bottom: 2rem
       > p
         font-size: 0.9rem
+      > h4
+        font-weight: 600
       
+.rating-star
+  color: #ffd000
+  &--small
+    font-size: 0.7rem

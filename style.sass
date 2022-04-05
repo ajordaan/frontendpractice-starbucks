@@ -1,6 +1,7 @@
 $darkGreen: #1e3932
 $green: #008248
 $paleGreen: #d4e9e2
+$superPaleGreen: #f1f8f6
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap')
 
@@ -60,4 +61,66 @@ body
   &:hover
     text-decoration: none
 
+.getting-started
+  text-align: center
 
+.getting-started-steps
+  &__step
+    display: flex
+    &__image
+      height: 3rem
+      padding-top: 1.5rem
+      padding-right: 1rem 
+  &__step-content
+    text-align: left
+
+.rewards-tabs
+  background-color: $superPaleGreen
+  &__header
+    padding: 1.5rem 1rem
+    box-shadow: 0px 7px 9px -7px rgba(0, 0, 0, 0.4)
+  &__title
+    text-align: center
+    font-size: 1.5rem
+    font-weight: 600
+  &__tab-buttons
+    display: flex
+    justify-content: space-around
+    font-weight: 600
+    font-size: 1.2rem
+  &__content
+    background-color: $paleGreen
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding-top: 3rem
+    padding-bottom: 3rem
+    > img
+      width: 90%
+    > p
+      text-align: center
+      font-size: 0.9rem
+    > h4
+      font-size: 1.2rem
+      font-weight: 600
+      margin-bottom: 0
+.extras
+  &__header
+    text-align: center
+  &__header-title
+    font-size: 1.5rem
+    font-weight: 600
+  &__header-subtitle
+    font-size: 0.9rem
+  &__content
+    display: flex
+    > img
+      height: 7rem
+      padding-top: 1.5rem
+      padding-right: 1rem
+    &__details
+      text-align: left
+      padding-bottom: 2rem
+      > p
+        font-size: 0.9rem
+      
